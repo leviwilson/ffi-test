@@ -11,6 +11,5 @@ module Library
       p.write_array_of_pointer image_files.map(&FFI::MemoryPointer.method(:from_string)) << nil
       return FakeRecProcessPages id, file, p
     end
-
   end
 end
